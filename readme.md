@@ -23,8 +23,8 @@ The script is divided into two main functions: `_scrape` and `_search`. Here's a
 * Constructs a URL to The Pirate Bay website with the given search query and category.
 * Calls `_scrape` with the constructed URL.
 
-*****
 ## Usage
+*****
 
 To use this script, simply run it from your terminal:
 ```

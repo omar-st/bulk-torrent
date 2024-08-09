@@ -10,7 +10,11 @@ _scrape() {
 }
 
 _search() {
-    s="https://www2.thepiratebay3.to/s/?q="$1"&"$2"=on&category=0"
+    if [$2 = '']; then
+        s="https://www2.thepiratebay3.to/s/?q="$1
+    else    
+        s="https://www2.thepiratebay3.to/s/?q="$1"&"$2"=on&category=0"
+    fi
     echo $s
     _scrape $s "1"
 }
